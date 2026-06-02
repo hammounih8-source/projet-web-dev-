@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HM MOBILIER, site de vente de mobilier moderne." />
+  <title>HM MOBILIER | Accueil</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="index.html">HM MOBILIER</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="content/produits.html">Biens</a></li>
+        <li><a href="content/reservation.html">Réservation</a></li>
+        <li id="nav-login-item"><a href="content/connexion.html">Connexion</a></li>
+        <li id="nav-register-item"><a href="content/inscription.html">Inscription</a></li>
+        <li id="nav-user-item" style="display:none;">
+          <span class="user-badge">👤 <span id="nav-username"></span></span>
+          <a href="#" id="btn-logout">Déconnexion</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Mobilier moderne et pratique</p>
+        <h1>Bienvenue chez HM MOBILIER</h1>
+        <p class="hero-text">Découvrez nos meubles, réservez facilement et gérez votre compte en quelques clics.</p>
+        <div class="hero-actions">
+          <a href="content/produits.html" class="btn primary">Voir les biens</a>
+          <a href="content/inscription.html" class="btn secondary">Créer un compte</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <article>
+        <strong>6+</strong>
+        <span>meubles disponibles</span>
+      </article>
+      <article>
+        <strong>3</strong>
+        <span>catégories</span>
+      </article>
+      <article>
+        <strong>24h</strong>
+        <span>réponse rapide</span>
+      </article>
+    </section>
+
+    <section class="section intro-section">
+      <div class="section-title">
+        <p class="eyebrow">Pourquoi nous choisir</p>
+        <h2>Un site simple et interactif</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span>⌂</span>
+          <h3>Catalogue dynamique</h3>
+          <p>Filtre les meubles par catégorie en un seul clic.</p>
+        </article>
+        <article class="feature-card">
+          <span>✓</span>
+          <h3>Formulaires validés</h3>
+          <p>Inscription, connexion et réservation avec contrôle des données.</p>
+        </article>
+        <article class="feature-card">
+          <span>◇</span>
+          <h3>Réservation rapide</h3>
+          <p>Choisis un meuble et envoie une demande de réservation facilement.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 HM MOBILIER. Tous droits réservés.</p>
+  </footer>
+
+  <script src="javascript/app.js"></script>
+</body>
+</html>

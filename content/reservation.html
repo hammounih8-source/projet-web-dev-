@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Réserver un meuble HM MOBILIER." />
+  <title>HM MOBILIER | Réservation</title>
+  <link rel="stylesheet" href="../style/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">HM MOBILIER</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="produits.html">Biens</a></li>
+        <li><a href="reservation.html" class="active">Réservation</a></li>
+        <li id="nav-login-item"><a href="connexion.html">Connexion</a></li>
+        <li id="nav-register-item"><a href="inscription.html">Inscription</a></li>
+        <li id="nav-user-item" style="display:none;">
+          <span class="user-badge">👤 <span id="nav-username"></span></span>
+          <a href="#" id="btn-logout">Déconnexion</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Réservation</p>
+        <h2>Réserver un meuble</h2>
+      </div>
+
+      <p id="selectedProductInfo" class="selected-info">Aucun produit sélectionné.</p>
+
+      <form id="orderForm" class="form-card" novalidate>
+        <label for="clientName">Votre nom</label>
+        <input type="text" id="clientName" placeholder="Ex: Ahmed Meziane" required />
+
+        <label for="clientPhone">Votre téléphone</label>
+        <input type="tel" id="clientPhone" placeholder="Ex: 0551234567" required />
+        <small class="hint">Format : 05, 06 ou 07 suivi de 8 chiffres</small>
+
+        <label for="productSelect">Meuble choisi</label>
+        <select id="productSelect" required></select>
+
+        <label for="clientCity">Votre ville</label>
+        <input type="text" id="clientCity" placeholder="Ex: Tizi-Ouzou" required />
+
+        <label for="visitDate">Date de visite</label>
+        <input type="date" id="visitDate" required />
+        <small class="hint">La date doit être dans le futur</small>
+
+        <button type="submit">Valider la réservation</button>
+        <p id="msgOrder" role="alert"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 HM MOBILIER. Tous droits réservés.</p>
+  </footer>
+
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

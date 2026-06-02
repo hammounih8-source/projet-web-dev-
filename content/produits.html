@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catalogue des meubles HM MOBILIER." />
+  <title>HM MOBILIER | Catalogue</title>
+  <link rel="stylesheet" href="../style/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="../index.html">HM MOBILIER</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="produits.html" class="active">Biens</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li id="nav-login-item"><a href="connexion.html">Connexion</a></li>
+        <li id="nav-register-item"><a href="inscription.html">Inscription</a></li>
+        <li id="nav-user-item" style="display:none;">
+          <span class="user-badge">👤 <span id="nav-username"></span></span>
+          <a href="#" id="btn-logout">Déconnexion</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Nos biens</p>
+        <h2>Catalogue des meubles</h2>
+      </div>
+      <div class="filters">
+        <button type="button" class="filter-btn active" data-filter="all">Tous</button>
+        <button type="button" class="filter-btn" data-filter="salon">Salon</button>
+        <button type="button" class="filter-btn" data-filter="chambre">Chambre</button>
+        <button type="button" class="filter-btn" data-filter="bureau">Bureau</button>
+      </div>
+      <div id="products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 HM MOBILIER. Tous droits réservés.</p>
+  </footer>
+
+  <script src="../javascript/app.js"></script>
+</body>
+</html>
